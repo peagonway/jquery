@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>资源懒加载</title>
+	<link rel="stylesheet" href="css/base.css">
+	<style>
+		.wrap{width:1000px;margin:0 auto;}
+		.header{height:160px; line-height: 160px;}
+		h1{background: #ddd}
+		h2.title{background: #ff0; padding:12px; }
+		ul.pic-list{  }
+		ul.pic-list li{width:33.3333%; float: left; border: 1px solid #ddd; box-sizing: border-box; text-align: center; margin-bottom: 10px }
+		ul.pic-list li img{width:90%; height: 200px;}
+	</style>
+</head>
+<body>
+	<div class="header wrap">
+		<h1>图片懒加载</h1>
+	</div>
+	<div class="banner wrap">
+		
+	</div>
+	<div class="pic-beiji wrap">
+		<h2 class="title">图片1</h2>
+		<ul class="pic-list clearfix">
+			<li><img src="images/loading.gif" data-src="http://p2.so.qhmsg.com/bdr/326__/t012393c0aca8d93437.jpg" alt=""></li>
+			<li><img src="images/loading.gif" data-src="http://p0.so.qhmsg.com/bdr/326__/t01d5d858742b49c995.jpg" alt=""></li>
+			<li><img src="images/loading.gif" data-src="http://p0.so.qhmsg.com/bdr/326__/t011cc238dacb0b09bf.jpg" alt=""></li>
+			<li><img src="images/loading.gif" data-src="http://p0.so.qhimgs1.com/bdr/326__/t01ed62bc5277166c70.jpg" alt=""></li>
+			<li><img src="images/loading.gif" data-src="http://p4.so.qhimgs1.com/bdr/326__/t0162c32228f8a600c4.jpg" alt=""></li>
+			<li><img src="images/loading.gif" data-src="http://p1.so.qhimgs1.com/bdr/326__/t01e3ff362e294bcc41.jpg" alt=""></li>
+		</ul>
+	</div>
+	<div class="pic-beiji wrap">
+		<h2 class="title">图片2</h2>
+		<ul class="pic-list clearfix">		
+			<li><img src="images/loading.gif" data-src="http://p0.so.qhimgs1.com/bdr/326__/t01ed62bc5277166c70.jpg" alt=""></li>
+			<li><img src="images/loading.gif" data-src="http://p1.so.qhmsg.com/bdr/326__/t016d8a28fbf8df5aa6.jpg" alt=""></li>
+			<li><img src="images/loading.gif" data-src="http://p4.so.qhimgs1.com/bdr/326__/t0172c8e39743620b44.jpg" alt=""></li>
+			<li><img src="images/loading.gif" data-src="http://p0.so.qhmsg.com/bdr/326__/t01687bf928368fefd5.jpg" alt=""></li>
+			<li><img src="images/loading.gif" data-src="http://p3.so.qhimgs1.com/bdr/326__/t01e9fc219e19bdd813.jpg" alt=""></li>
+			<li><img src="images/loading.gif" data-src="http://p2.so.qhimgs1.com/bdr/326__/t0138f19465e539bba2.jpg" alt=""></li>
+
+		</ul>
+	</div>
+	<div class="pic-beiji wrap">
+		<h2 class="title">图片3</h2>
+		<ul class="pic-list clearfix">
+			<li><img src="images/loading.gif" data-src="http://p0.so.qhmsg.com/bdr/326__/t01ef9498b4fb527645.jpg" alt=""></li>
+			<li><img src="images/loading.gif" data-src="http://p3.so.qhmsg.com/bdr/326__/t01b253541be74c4218.jpg" alt=""></li>
+			<li><img src="images/loading.gif" data-src="http://p2.so.qhmsg.com/bdr/326__/t01e2a0f8b60c85a5c7.jpg" alt=""></li>
+			<li><img src="images/loading.gif" data-src="http://p2.so.qhimgs1.com/bdr/326__/t01ec6554aeed9f800e.png" alt=""></li>
+			<li><img src="images/loading.gif" data-src="http://p0.so.qhimgs1.com/bdr/326__/t0143b42a91ddf19e0c.jpg" alt=""></li>
+			<li><img src="images/loading.gif" data-src="http://p3.so.qhmsg.com/bdr/326__/t01f10c49631fca51e8.jpg" alt=""></li>
+		</ul>
+	</div>
+	<div class="pic-beiji wrap">
+		<h2 class="title">图片4</h2>
+		<ul class="pic-list clearfix">
+			<li><img src="images/loading.gif" data-src="http://p0.so.qhimgs1.com/bdr/326__/t01565f9813b899e19c.png" alt=""></li>
+			<li><img src="images/loading.gif" data-src="http://p2.so.qhmsg.com/bdr/326__/t01e21c70ffc9342ab7.png" alt=""></li>
+			<li><img src="images/loading.gif" data-src="http://p3.so.qhimgs1.com/bdr/326__/t01d372adb33ff745c3.png" alt=""></li>
+			<li><img src="images/loading.gif" data-src="http://p1.so.qhimgs1.com/bdr/326__/t012251cc490bff4181.png" alt=""></li>
+			<li><img src="images/loading.gif" data-src="http://p1.so.qhimgs1.com/bdr/326__/t0101e95195ca99b581.pngc" alt=""></li>
+		</ul>
+	</div>
+<script src="js/lazyload.js"></script>
+<!-- <script src="js/index.js"></script> -->
+</body>
+</html>
